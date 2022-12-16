@@ -1,0 +1,25 @@
+{
+  "schema": "1.0",
+  "type": "whmcs-gateways",
+  "name": "maib",
+  "license": "open",
+  "category": "payments",
+  "description": {
+    "name": "maib",
+    "tagline": "maib bank payment gateway"
+  },
+  "logo": {
+    "filename": "maib.png"
+  },
+  "support": {
+    "homepage": "https:\/\/maib.md\/", 
+    "email": "ecom@maib.com", 
+    "docs_url": "https:\/\/github.com/maibank\/whmcs-maib\/"
+  },
+  "authors": [
+    {
+      "name": "Constantin",
+      "homepage": "https:\/\/github.com\/kostealupu\/"
+    }
+  ]
+}
