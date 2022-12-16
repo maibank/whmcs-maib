@@ -4,6 +4,7 @@
 
 1. Unzip folder ```modules``` to site root directory
 2. WHMCS 7: Activate the plugin through the 'Setup->Payments->Payment Gateways' menu and set settings from maib
+
    WHMCS 8: Activate the plugin through the 'Setup->Payments->Payment Gateways' menu and set settings from maib
 
 ---------
