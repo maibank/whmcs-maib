@@ -1,11 +1,35 @@
+# maib Payment Gateway for WHMCS
+
 #EN
 
-== Installation ==
+**INTRODUCTION**
+
+The module integrates WHMCS with **maib** ecommerce.
+
+**REQUIREMENTS**
+
+WHMCS
+
+CURL
+
+**BEFORE USAGE**
+
+Send email to **maib** ecommerce support (ecom@maib.md) with your website external ***IP*** and ***Callback URL***.
+
+**INSTALLATION**
 
 1. Upload folder ```modules``` to WHMCS root directory
-2. WHMCS 7: Activate the plugin through the 'Setup->Payments->Payment Gateways' menu and set settings from **maib**
+2. WHMCS 7: Activate module through the menu: 'Setup->Payments->Payment Gateways'
 
-   WHMCS 8: Activate the plugin through the 'Addons->Apps & Integrations->Browse->Payments->maib' menu and set settings from **maib**
+   WHMCS 8: Activate module through the menu: 'Addons->Apps & Integrations->Browse->Payments->maib'
+  
+**CONFIGURATION**
+
+***Display Name*** - The name of the payment gateway that customers see on the website.
+
+***Test Mode*** - Tick to enable test mode. The following tests are required: payment, refund, closing of business day.
+
+***Callback*** - Send this URL and website IP to **maib** ecommerce support.
 
 ---------
 
@@ -14,9 +38,9 @@
 == Instalare ==
 
 1. Încărcați folderul ```modules``` în mapa rădăcină a platformei WHMCS
-2. WHMCS 7: Activați pluginul prin 'Setup->Payments->Payment Gateways' și adăugați setările primite de la **maib**
+2. WHMCS 7: Activați pluginul: 'Setup->Payments->Payment Gateways' și efectuați setările necesare.
    
-   WHMCS 8: Activați pluginul prin 'Addons->Apps & Integrations->Browse->Payments->maib' și adăugați setările primite de la **maib**
+   WHMCS 8: Activați pluginul: 'Addons->Apps & Integrations->Browse->Payments->maib' și efectuați setările necesare.
 
 ---------
 
@@ -25,6 +49,6 @@
 == Установка ==
 
 1. Загрузите папку ```modules``` в корневую директорию WHMCS
-2. WHMCS 7: Активируйте плагин в меню 'Setup->Payments->Payment Gateways' и введите настройки от **maib**
+2. WHMCS 7: Активируйте плагин в меню 'Setup->Payments->Payment Gateways' и сделайте нужные настройки
 
-   WHMCS 8: Активируйте плагин в меню 'Addons->Apps & Integrations->Browse->Payments->maib' и введите настройки от **maib**
+   WHMCS 8: Активируйте плагин в меню 'Addons->Apps & Integrations->Browse->Payments->maib' и сделайте нужные настройки
