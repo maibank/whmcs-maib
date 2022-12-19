@@ -51,6 +51,8 @@ Use openssl to convert certificate in *.pem* format from *.pfx* and password pro
           openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
         # The private key with password:
           openssl pkcs12 -in certname.pfx -nocerts -out key.pem
+        
+Disable test mode, add path to live certificate/key and enter new password.
           
 ---------
 
