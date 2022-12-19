@@ -115,6 +115,8 @@ Dezactivați regimul de testare, indicați calea spre certificatul/cheia pentru 
 
 #RU
 
+Этот модуль интегрирует электронную коммерцию **maib** с платформой WHMCS.
+
 **ПЕРЕД ИСПОЛЬЗОВАНИЕМ**
 
 Чтобы иметь возможность выполнять тесты, отправьте email в техподдержку электронной коммерции **maib** (ecom@maib.md), содержащее внешний **IP** веб-сайта и **Callback URL**.
