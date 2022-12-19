@@ -23,7 +23,6 @@ Send email to **maib** ecommerce support (ecom@maib.md) with your website extern
 
    WHMCS 8: Activate module through the menu: 'Addons->Apps & Integrations->Browse->Payments->maib'
    
-  
 **CONFIGURATION**
 
 ***Display Name*** - The name of the payment gateway that customers see on the website.
@@ -40,12 +39,11 @@ Send email to **maib** ecommerce support (ecom@maib.md) with your website extern
 
 ***Closing of business day*** -  Closing of business day URL. Run this URL with CRON job every day at 23:59!
 
-
 **LIVE MODE**
 
-For live mode you will receive certificate in *.pfx* format and password.
+For live mode **maib** will provide certificate in *.pfx* format and certificate password.
 
-Use openssl to convert certificate in *.pem* format from *.pfx* and password provided by **maib**:
+Use openssl to convert certificate in *.pem* format from *.pfx* and password provided:
 
         # Public certificate:
           openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
