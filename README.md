@@ -42,6 +42,7 @@ Send email to **maib** ecommerce support (ecom@maib.md) with your website extern
 
 
 **LIVE MODE**
+
 For live mode you will receive certificate in *.pfx* format and password.
 
 Use openssl to convert certificate in *.pem* format from *.pfx* and password provided by **maib**:
