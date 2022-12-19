@@ -8,8 +8,6 @@ The module integrates WHMCS with **maib** ecommerce.
 
 **REQUIREMENTS**
 
-WHMCS
-
 CURL
 
 **BEFORE USAGE**
