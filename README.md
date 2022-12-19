@@ -80,7 +80,7 @@ Pentru a putea efectua transmiteți un email către suportul **maib** ecommerce 
 
 ***Display Name*** - Denumirea metodei de plată cum o văd clineții pe website.
 
-***Test Mode*** - Biați pentru a activa modul de testare. Următoarele teste sunt obligatorii: achitare, restituire plată și închiderea zilei.
+***Test Mode*** - Bifați pentru a activa modul de testare. Următoarele teste sunt obligatorii: achitare, restituire plată și închiderea zilei.
 
 Card pentru efectuarea testelor:
 
