@@ -96,13 +96,24 @@ Card pentru efectuarea testelor:
 
 ***Password*** - Parola certificatului. Parola certificatului pentru teste: Za86DuC
 
-***Closing of business day*** -  URL închidere zi. Executați acest URL prin CRON în fiecare zi la ora 23:59!
+***Closing of business day*** -  URL pentru închiderea zilei. Executați acest URL prin CRON în fiecare zi la ora 23:59!
+
+**TRANZACȚII REALE**
+
+Pentru tranzacții reale veți primi de la **maib** un certificat în format *.pfx* și parola certificatului.
+
+Folosiți openssl pentru a transforma certificatul *.pfx* în format *.pem* folosind parola primită:
+
+        # Public certificate:
+          openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
+        # The private key with password:
+          openssl pkcs12 -in certname.pfx -nocerts -out key.pem
+        
+Dezactivați modul de testare, indicați calea spre certificatul/cheia pentru tranzacții reale și parola primită.
 
 ---------
 
 #RU
-
-
 
 == Установка ==
 
