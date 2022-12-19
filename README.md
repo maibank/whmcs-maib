@@ -31,6 +31,15 @@ Send email to **maib** ecommerce support (ecom@maib.md) with your website extern
 
 ***Callback*** - Send this URL and website IP to **maib** ecommerce support.
 
+***Certificate*** - Path to certificate for request authorization. By default path to test certificate. 
+
+***Key certificate*** - Path to key certificate for request authorization. By default path to test key certificate. 
+
+***Password*** - Certificate password. Test certificate password: Za86DuC
+
+***Closing of business day*** -  Closing of business day URL. Run this URL with CRON job every day at 23:59!
+
+
 ---------
 
 #RO
