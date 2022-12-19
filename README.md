@@ -32,7 +32,7 @@ Test card:
       CVV: 760
 
 
-***Callback*** - Send this URL and website IP to **maib** ecommerce support.
+***Callback*** - Send this Callback URL and website IP to **maib** ecommerce support.
 
 ***Certificate*** - Path to certificate for merchant authorization. By default path to test certificate. 
 
@@ -78,7 +78,7 @@ Pentru a putea efectua teste transmiteți un email către suportul **maib** ecom
 
 **CONFIGURARE**
 
-***Display Name*** - Denumirea metodei de plată cum o văd clineții pe website.
+***Display Name*** - Denumirea metodei de plată cum o vor vedea clienții pe website.
 
 ***Test Mode*** - Bifați pentru a activa modul de testare. Următoarele teste sunt obligatorii: achitare, restituire plată și închiderea zilei.
 
@@ -88,7 +88,7 @@ Card pentru efectuarea testelor:
       Exp. date: 06/28 
       CVV: 760
 
-***Callback*** - Transmiteți acest URL și IP-ul către **maib** ecommerce suport.
+***Callback*** - Transmiteți acest Callabck URL și IP-ul către **maib** ecommerce suport.
 
 ***Certificate*** - Calea spre certificat pentru autorizare comerciant. În mod implicit, calea către certificatul pentru teste.
 
@@ -109,15 +109,58 @@ Folosiți openssl pentru a transforma certificatul *.pfx* în format *.pem* folo
         # The private key with password:
           openssl pkcs12 -in certname.pfx -nocerts -out key.pem
         
-Dezactivați modul de testare, indicați calea spre certificatul/cheia pentru tranzacții reale și parola primită.
+Dezactivați regimul de testare, indicați calea spre certificatul/cheia pentru tranzacții reale și parola primită.
 
 ---------
 
 #RU
 
-== Установка ==
+**ПЕРЕД ИСПОЛЬЗОВАНИЕМ**
+
+Чтобы иметь возможность выполнять тесты, отправьте email в техподдержку электронной коммерции **maib** (ecom@maib.md), содержащее внешний **IP** веб-сайта и **Callback URL**.
+
+**ТРЕБОВАНИЯ**
+
+CURL
+
+**УСТАНОВКА**
 
 1. Загрузите папку ```modules``` в корневую директорию WHMCS
 2. WHMCS 7: Активируйте плагин в меню 'Setup->Payments->Payment Gateways' и сделайте нужные настройки
 
    WHMCS 8: Активируйте плагин в меню 'Addons->Apps & Integrations->Browse->Payments->maib' и сделайте нужные настройки
+   
+**НАСТРОЙКИ**
+
+***Display Name*** - Название способа оплаты, которое клиенты видят на сайте.
+
+***Test Mode*** - Установите флажок, чтобы включить тестовый режим. Обязательными являются следующие тесты: оплата, возврат оплаты и закрытие дня.
+
+Тестовая карта:
+
+      Card number: 5102180060101124 
+      Exp. date: 06/28 
+      CVV: 760
+
+***Callback*** - Перешлите этот Callback URL и IP в поддержку электронной коммерции **maib**.
+
+***Certificate*** - Путь к сертификату авторизации мерчанта. По умолчанию путь к сертификату для тестов.
+
+***Key certificate*** - Путь к ключу сертификата. По умолчанию путь к ключу сертификата для тестов.
+
+***Password*** - Пароль сертификата. Пароль тестового сертификата: Za86DuC
+
+***Closing of business day*** -  URL закрытия дня. Запускайте этот URL через CRON каждый день в 23:59!
+
+**РЕАЛЬНЫЕ ТРАНЗАКЦИИ**
+
+Для реальных транзакций вы получите от **maib** сертификат в формате *.pfx* и пароль сертификата.
+
+Используйте openssl, чтобы преобразовать сертификат *.pfx* в формат *.pem*, используя полученный пароль:
+
+        # Public certificate:
+          openssl pkcs12 -in certname.pfx -nokeys -out cert.pem
+        # The private key with password:
+          openssl pkcs12 -in certname.pfx -nocerts -out key.pem
+        
+Отключите тестовый режим, укажите путь к сертификату/ключу для реальных транзакций и полученный пароль.
