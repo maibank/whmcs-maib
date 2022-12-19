@@ -2,8 +2,6 @@
 
 #EN
 
-**INTRODUCTION**
-
 The module integrates WHMCS with **maib** ecommerce.
 
 **REQUIREMENTS**
@@ -27,11 +25,18 @@ Send email to **maib** ecommerce support (ecom@maib.md) with your website extern
 
 ***Test Mode*** - Tick to enable test mode. The following tests are required: payment, refund, closing of business day.
 
+Test card:
+
+      Card number: 5102180060101124 
+      Exp. date: 06/28 
+      CVV: 760
+
+
 ***Callback*** - Send this URL and website IP to **maib** ecommerce support.
 
-***Certificate*** - Path to certificate for request authorization. By default path to test certificate. 
+***Certificate*** - Path to certificate for merchant authorization. By default path to test certificate. 
 
-***Key certificate*** - Path to key certificate for request authorization. By default path to test key certificate. 
+***Key certificate*** - Path to key certificate. By default path to test key certificate. 
 
 ***Password*** - Certificate password. Test certificate password: Za86DuC
 
@@ -54,16 +59,50 @@ Disable test mode, add path to live certificate/key and enter new password.
 
 #RO
 
-== Instalare ==
+Acest modul integrează **maib** ecommerce cu platforma WHMCS.
+
+**CERINȚE**
+
+CURL
+
+**ÎNAINTE DE UTILIZARE**
+
+Pentru a putea efectua transmiteți un email către suportul **maib** ecommerce (ecom@maib.md) care să conțină ***IP*** extern al website-ului și ***Callback URL***.
+
+**INSATALRE**
 
 1. Încărcați folderul ```modules``` în mapa rădăcină a platformei WHMCS
 2. WHMCS 7: Activați pluginul: 'Setup->Payments->Payment Gateways' și efectuați setările necesare.
    
    WHMCS 8: Activați pluginul: 'Addons->Apps & Integrations->Browse->Payments->maib' și efectuați setările necesare.
 
+**CONFIGURARE**
+
+***Display Name*** - Denumirea metodei de plată cum o văd clineții pe website.
+
+***Test Mode*** - Biați pentru a activa modul de testare. Următoarele teste sunt obligatorii: achitare, restituire plată și închiderea zilei.
+
+Card pentru efectuarea testelor:
+
+      Card number: 5102180060101124 
+      Exp. date: 06/28 
+      CVV: 760
+
+***Callback*** - Transmiteți acest URL și IP-ul către **maib** ecommerce suport.
+
+***Certificate*** - Calea spre certificat pentru autorizare comerciant. În mod implicit, calea către certificatul pentru teste.
+
+***Key certificate*** - Calea spre cheia certificatului. În mod implicit, calea către cheia certificatului pentru teste.
+
+***Password*** - Parola certificatului. Parola certificatului pentru teste: Za86DuC
+
+***Closing of business day*** -  URL închidere zi. Executați acest URL prin CRON în fiecare zi la ora 23:59!
+
 ---------
 
 #RU
+
+
 
 == Установка ==
 
