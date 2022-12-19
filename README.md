@@ -67,7 +67,7 @@ CURL
 
 **ÎNAINTE DE UTILIZARE**
 
-Pentru a putea efectua transmiteți un email către suportul **maib** ecommerce (ecom@maib.md) care să conțină ***IP*** extern al website-ului și ***Callback URL***.
+Pentru a putea efectua teste transmiteți un email către suportul **maib** ecommerce (ecom@maib.md) care să conțină ***IP*** extern al website-ului și ***Callback URL***.
 
 **INSATALRE**
 
