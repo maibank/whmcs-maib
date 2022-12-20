@@ -162,15 +162,6 @@ function maib_link($params)
 		$errors = curl_error($reqs);
 		curl_close($reqs);
 		
-    
-    if(!empty($errors)) {
-    logTransaction("maib", $errors, "ERROR CURL");
-    }
-      
-    if (strpos($response, 'error:') !== false) {
-    logTransaction("maib", $response, "ERROR");
-    }
-      
 	$resp = [];
     $parses = explode("\n", $response);
         foreach ($parses as $str) {
@@ -204,14 +195,20 @@ try {
     echo "Error! {$e->getMessage()}";
     $pdo->rollBack();
 }
-  
 
-//return $htmlOutput;
 header("Location: " . $client_url . "?trans_id=" . $resp['TRANSACTION_ID']);
 exit;
    } else {
-   return "Error! Please see gateway transaction logs.";
-   }
+if(!empty($errors)) {
+  logTransaction("maib", $errors, "ERROR CURL");
+  return "Error! Please see gateway transaction log.";  
+    }
+ 
+if(!empty($response)) { 
+  logTransaction("maib", $response, "ERROR");
+  return "Error! Please see gateway transaction log.";  
+    }
+  }
  } 
 }
 
